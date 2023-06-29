@@ -45,7 +45,7 @@
     // }
 // }
 
-function numbarray(length){
+function numbarray(length){ //returns array as long as argument
    let lengtharray = [];
    let a = 0;
    while (lengtharray.length<length){
@@ -55,8 +55,14 @@ function numbarray(length){
    return lengtharray
 
 }
-console.log(numbarray(20));
+// console.log(numbarray(20));
 
-function isPrime(num){
-    
+function isPrime(number){
+    let arrayUpToPrime = numbarray(number-1) //for the array not to include prime itself
+    arrayUpToPrime = arrayUpToPrime.splice(1,arrayUpToPrime.length) // for array to not include 1
+    // for (num of arrayUpToPrime){
+
+    // }
 }
+
+console.log(isPrime(15))
