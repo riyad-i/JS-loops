@@ -44,3 +44,19 @@
     // }
     // }
 // }
+
+function numbarray(length){
+   let lengtharray = [];
+   let a = 0;
+   while (lengtharray.length<length){
+        a+=1;
+        lengtharray.push(a)
+   }
+   return lengtharray
+
+}
+console.log(numbarray(20));
+
+function isPrime(num){
+    
+}
