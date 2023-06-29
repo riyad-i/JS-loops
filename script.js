@@ -68,4 +68,19 @@ function isPrime(number){
     return true
 }
 
-console.log(isPrime(11))
+// console.log(isPrime(11))
+
+
+function factorsOf(number){ //returns factors of number besides 1 and itself
+    let arrayUpToNumber = numbarray(number);
+    let listOfFactors = []
+    for (let num of arrayUpToNumber){
+        if (number % num == 0){
+           listOfFactors.push(num)
+        }
+    }
+    return listOfFactors
+
+}
+
+console.log(factorsOf(84));
