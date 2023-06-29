@@ -71,7 +71,7 @@ function isPrime(number){
 // console.log(isPrime(11))
 
 
-function factorsOf(number){ //returns factors of number besides 1 and itself
+function factorsOf(number){ //returns factors of number 
     let arrayUpToNumber = numbarray(number);
     let listOfFactors = []
     for (let num of arrayUpToNumber){
@@ -83,4 +83,28 @@ function factorsOf(number){ //returns factors of number besides 1 and itself
 
 }
 
-console.log(factorsOf(84));
+// console.log(factorsOf(51));
+
+// userInput = prompt("What number would you like to find factors for? :")
+
+// console.log(typeof userInput);
+// userInput = Number(userInput)
+// console.log(typeof userInput);
+// console.log(factorsOf(userInput))
+
+
+// testArr = [1,2]
+// newArr = testArr.concat()
+// console.log(newArr)
+// console.log(newArr == testArr);
+
+// let newList = numbarray(20);
+// let newList2 = newList.splice(1, newList.length)
+// console.log(newList2);
+
+let car = {
+    color: ['blue','red'],
+    year: 2002,
+}
+
+console.log(car["color"]);
