@@ -60,9 +60,12 @@ function numbarray(length){ //returns array as long as argument
 function isPrime(number){
     let arrayUpToPrime = numbarray(number-1) //for the array not to include prime itself
     arrayUpToPrime = arrayUpToPrime.splice(1,arrayUpToPrime.length) // for array to not include 1
-    // for (num of arrayUpToPrime){
-
-    // }
+    for (num of arrayUpToPrime){
+        if (number % num == 0){
+            return false
+        }
+    }
+    return true
 }
 
-console.log(isPrime(15))
+console.log(isPrime(11))
